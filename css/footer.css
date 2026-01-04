@@ -1,0 +1,18 @@
+footer {
+  padding: 124px 0 73px;
+  background: #008281;
+  font-size: 24px;
+  line-height: 36px;
+}
+footer .phone {
+  margin: 20px 44px 0 auto;
+}
+
+.btn-callback {
+  margin: 62px 0 0;
+}
+
+.footer-text {
+  max-width: 490px;
+  margin: 20px 0 0;
+}

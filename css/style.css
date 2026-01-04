@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "GolosText";
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/GolosText/GolosText-Black.eot");
+  src: url("../fonts/GolosText/GolosText-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GolosText/GolosText-Black.woff") format("woff"), url("../fonts/GolosText/GolosText-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GolosText";
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/GolosText/GolosText-ExtraBold.eot");
+  src: url("../fonts/GolosText/GolosText-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GolosText/GolosText-ExtraBold.woff") format("woff"), url("../fonts/GolosText/GolosText-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GolosText";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/GolosText/GolosText-Bold.eot");
+  src: url("../fonts/GolosText/GolosText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GolosText/GolosText-Bold.woff") format("woff"), url("../fonts/GolosText/GolosText-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GolosText";
+  font-weight: 600;
+  font-style: normal;
+  src: url("../fonts/GolosText/GolosText-SemiBold.eot");
+  src: url("../fonts/GolosText/GolosText-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GolosText/GolosText-SemiBold.woff") format("woff"), url("../fonts/GolosText/GolosText-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GolosText";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/GolosText/GolosText-Medium.eot");
+  src: url("../fonts/GolosText/GolosText-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GolosText/GolosText-Medium.woff") format("woff"), url("../fonts/GolosText/GolosText-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GolosText";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/GolosText/GolosText-Regular.eot");
+  src: url("../fonts/GolosText/GolosText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GolosText/GolosText-Regular.woff") format("woff"), url("../fonts/GolosText/GolosText-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GolosText";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/GolosText/GolosText-Regular.eot");
+  src: url("../fonts/GolosText/GolosText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GolosText/GolosText-Regular.woff") format("woff"), url("../fonts/GolosText/GolosText-Regular.ttf") format("truetype");
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 24px;
+  font-family: "GolosText", sans-serif;
+  font-weight: normal;
+  background: #000F22;
+  color: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "GolosText", sans-serif;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 54px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  color: #595959;
+}
+input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  color: #595959;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder, select:-ms-input-placeholder {
+  color: #595959;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+  color: #595959;
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+  color: #595959;
+}
+input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input[type=radio], input[type=checkbox] {
+  width: auto;
+  height: auto;
+  -webkit-appearance: auto;
+     -moz-appearance: auto;
+          appearance: auto;
+  margin: 0 5px 0 0;
+  display: inline;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 0 0 13px;
+}
+label:last-child {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+  padding: 12px 17px;
+  height: 103px;
+}
+
+button, .btn {
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "GolosText", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+button:hover, button:focus, .btn:hover, .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 10px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 56px;
+  border-radius: 8px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-blue {
+  background: #000F22;
+  color: #fff;
+}
+.btn-blue:hover, .btn-blue:focus {
+  background: #000;
+  color: #fff;
+}
+
+.svg-icon {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+strong, b {
+  font-weight: bold;
+  display: inline-block;
+}
+
+ul, ol {
+  padding: 0 0 0 20px;
+}
+
+.my-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-dots {
+  list-style-type: disc;
+}
+
+a.color-white {
+  color: #fff;
+}
+a.color-white:hover {
+  color: #000F22;
+}
+
+h1, .h1, h2, .h2 {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 500;
+  width: 100%;
+  margin: 0 0 50px;
+}
+
+h1, .h1 {
+  margin: 0 0 60px;
+}
+
+h3, .h3 {
+  width: 100%;
+  font-size: 36px;
+  line-height: 48px;
+  margin: 0 0 50px;
+}
+h3:last-child, .h3:last-child {
+  margin: 0;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.text-big {
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.container {
+  max-width: 1360px;
+  padding: 0 20px;
+}
+
+.row {
+  margin: 0 -20px;
+}
+.row > * {
+  padding: 0 20px;
+}
+
+.container-fluid {
+  max-width: none;
+  padding: 0 66px;
+}
+
+.label-checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin: 15px 0 0;
+  line-height: 1.14;
+}
+
+.inp-check {
+  display: none;
+}
+
+.checkbox-custom {
+  margin: 0 12px 0 0;
+  position: relative;
+  border-radius: 6px;
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  cursor: pointer;
+}
+
+.inp-check:checked ~ .checkbox-custom {
+  background: #fff url("../img/check-black.svg") no-repeat center;
+  background-size: 8px;
+}
