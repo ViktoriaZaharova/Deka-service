@@ -1,2 +1,138 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1840px) {
+  .advantages::after {
+    width: 530px;
+    height: 450px;
+    top: auto;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 1660px) {
+  .container-fluid {
+    padding: 0 20px;
+  }
+  .logo-name {
+    max-width: 250px;
+    margin: 0;
+  }
+  .logo-text {
+    max-width: 80px;
+  }
+  .menu .nav-item {
+    margin: 0 20px 0 0;
+  }
+  .menu .nav-item:last-child {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  header {
+    padding: 20px 0;
+  }
+  .nav-menu {
+    margin: 0 0 0 auto;
+  }
+  .logo-name {
+    max-width: 200px;
+  }
+  .logo-text {
+    max-width: 50px;
+  }
+  .advantages::before {
+    right: -50px;
+  }
+  .principles-img {
+    width: 350px;
+    right: 20px;
+  }
+  .principles .box-text {
+    max-width: 676px;
+  }
+}
+@media only screen and (max-width: 1220px) {
+  .menu {
+    font-size: 14px;
+  }
+  h1, .h1 {
+    margin: 0 0 40px;
+  }
+  .home {
+    padding: 60px 0 30px;
+  }
+  .home .box-text {
+    margin: 30px 0 0;
+  }
+  .home-text {
+    padding: 20px;
+  }
+  .principles-wrapper {
+    padding: 40px;
+  }
+  .advantages::after {
+    width: 400px;
+    height: 340px;
+  }
+  .advantages {
+    padding: 50px 0 20px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  h1, .h1, h2, .h2 {
+    font-size: 36px;
+    margin: 0 0 30px;
+  }
+  .btn-burger {
+    display: block;
+  }
+  .nav-menu {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    z-index: 1000;
+    padding: 80px 24px 24px;
+  }
+  .nav-menu.active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .nav-menu__close {
+    display: block;
+  }
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 20px;
+    font-size: 16px;
+  }
+  .menu .nav-item {
+    margin: 0;
+  }
+  .advantages {
+    padding: 50px 0 0;
+  }
+  .advantages::after {
+    display: block;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .home-img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .home-text {
+    max-width: none;
+  }
+}
