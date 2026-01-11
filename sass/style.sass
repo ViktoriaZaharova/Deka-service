@@ -164,7 +164,6 @@ a.color-white
   &:hover
     color: $blue
 
-
 h1, .h1, h2, .h2
   font-size: 48px
   line-height: 1
@@ -184,11 +183,14 @@ h3, .h3
     margin: 0
 
 .mb-64
-  margin-bottom: 64px  
+  margin-bottom: 64px
+
+.mb-30
+  margin-bottom: 30px
 
 .text-big
   font-size: 24px
-  line-height: 48px  
+  line-height: 48px
 
 .container
   max-width: 1360px
@@ -203,30 +205,18 @@ h3, .h3
   max-width: none
   padding: 0 66px
 
-//checkbox my
-.label-checkbox
-  position: relative
+.dropdown-toggle
   display: flex
-  align-items: flex-start
-  color: rgba(255, 255, 255, 0.5)
-  font-size: 14px
-  margin: 15px 0 0
-  line-height: 1.14
+  align-items: center
+  &::after
+    width: 24px
+    height: 24px
+    border: none
+    padding: 0
+    margin: 0 0 0 5px
+    background: url('../img/arrow-bottom.svg') no-repeat center
+    background-size: 100%
+    @include d-flex
 
-.inp-check
-  display: none
-
-.checkbox-custom
-  margin: 0 12px 0 0
-  position: relative
-  border-radius: 6px
-  background-color: #fff
-  width: 16px
-  height: 16px
-  min-width: 16px
-  cursor: pointer
-
-.inp-check:checked ~ .checkbox-custom
-  background: #fff url("../img/check-black.svg") no-repeat center
-  background-size: 8px
-//checkbox my end
+.dropdown-menu
+  width: 100%

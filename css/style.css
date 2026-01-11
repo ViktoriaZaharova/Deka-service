@@ -292,6 +292,10 @@ h3:last-child, .h3:last-child {
   margin-bottom: 64px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .text-big {
   font-size: 24px;
   line-height: 48px;
@@ -314,36 +318,33 @@ h3:last-child, .h3:last-child {
   padding: 0 66px;
 }
 
-.label-checkbox {
-  position: relative;
+.dropdown-toggle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dropdown-toggle::after {
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 5px;
+  background: url("../img/arrow-bottom.svg") no-repeat center;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.inp-check {
-  display: none;
-}
-
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  cursor: pointer;
-}
-
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.dropdown-menu {
+  width: 100%;
 }

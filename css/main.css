@@ -154,9 +154,174 @@
 }
 
 .tehnical-services {
-  padding: 0 0 40px;
+  padding: 0 0 150px;
   background: linear-gradient(179.78deg, #000F22 15.28%, #00AAA2 120.93%);
 }
 .tehnical-services h2 {
   margin: 0 0 75px;
+}
+.tehnical-services .box-text {
+  margin: 45px 0 0;
+  max-width: 674px;
+  width: 100%;
+}
+
+.tehnical-text {
+  max-width: 633px;
+  width: 100%;
+  background: #000F22;
+  padding: 24px;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+.tehnical-text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#00AAA2));
+  background: linear-gradient(180deg, #FFFFFF 0%, #00AAA2 100%);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #000));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.principles {
+  padding: 134px 0;
+}
+.principles h2 {
+  margin: 0;
+  line-height: 60px;
+}
+.principles .box-text {
+  max-width: 856px;
+  width: 100%;
+}
+
+.principles-wrapper {
+  max-width: 1304px;
+  width: 100%;
+  color: #fff;
+  background: #00AAA2;
+  position: relative;
+  z-index: 1;
+  border-radius: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 45px 50px;
+}
+.principles-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#00AAA2));
+  background: linear-gradient(180deg, #FFFFFF 0%, #00AAA2 100%);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #000));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.principles-img {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 76px;
+  width: 491px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 57px 0 90px;
+  background: linear-gradient(179.78deg, #000F22 15.28%, #00AAA2 120.93%);
+}
+.advantages::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  width: 968px;
+  height: 610px;
+  top: 10px;
+  right: -63px;
+  background: url("../img/engineer-blue-jumpsuit-holding-tablet-looking-into-camera-Photoroom 1.png") no-repeat center;
+  background-size: cover;
+}
+
+.advantages-card {
+  width: 100%;
+  height: 100%;
+  background: #000F22;
+  border-radius: 19px;
+  position: relative;
+  z-index: 1;
+  padding: 15px;
+  -webkit-box-shadow: 0px 4px 10px 0px #00AAA2;
+          box-shadow: 0px 4px 10px 0px #00AAA2;
+}
+.advantages-card h3 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.advantages-card__img {
+  width: 100%;
+  height: 155px;
+  border-radius: 13px;
+  overflow: hidden;
+  margin: 0 0 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages-card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.advantages-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#00AAA2));
+  background: linear-gradient(180deg, #FFFFFF 0%, #00AAA2 100%);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000)) content-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #000));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
