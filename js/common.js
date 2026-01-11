@@ -4,7 +4,7 @@ $(document).ready(function () {
     const $menu = $('.nav-menu');
     const $burger = $('.btn-burger');
     const $close = $('.nav-menu__close');
-    const mobileWidth = 992;
+    const mobileWidth = 1120;
 
     function isMobile() {
         return $(window).width() < mobileWidth;
